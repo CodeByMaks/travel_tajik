@@ -1,0 +1,130 @@
+[
+	{
+		"place_id" : 1,
+		"created_at" : "2026-01-02 22:54:22",
+		"is_active" : "1",
+		"updated_at" : "2026-01-02 22:54:22",
+		"category_code" : "DESTINATION",
+		"region_code" : "DRS"
+	},
+	{
+		"place_id" : 2,
+		"created_at" : "2026-01-02 22:58:49",
+		"is_active" : "1",
+		"updated_at" : "2026-01-02 22:58:49",
+		"category_code" : "DESTINATION",
+		"region_code" : "DRS"
+	},
+	{
+		"place_id" : 3,
+		"created_at" : "2026-01-02 23:02:17",
+		"is_active" : "1",
+		"updated_at" : "2026-01-02 23:02:17",
+		"category_code" : "DESTINATION",
+		"region_code" : "DUSHANBE"
+	},
+	{
+		"place_id" : 4,
+		"created_at" : "2026-01-02 23:04:47",
+		"is_active" : "1",
+		"updated_at" : "2026-01-02 23:04:47",
+		"category_code" : "DESTINATION",
+		"region_code" : "DUSHANBE"
+	},
+	{
+		"place_id" : 5,
+		"created_at" : "2026-01-02 23:08:34",
+		"is_active" : "1",
+		"updated_at" : "2026-01-02 23:08:34",
+		"category_code" : "DESTINATION",
+		"region_code" : "GBAO"
+	},
+	{
+		"place_id" : 6,
+		"created_at" : "2026-01-02 23:16:12",
+		"is_active" : "1",
+		"updated_at" : "2026-01-02 23:16:12",
+		"category_code" : "DESTINATION",
+		"region_code" : "GBAO"
+	},
+	{
+		"place_id" : 7,
+		"created_at" : "2026-01-02 23:20:37",
+		"is_active" : "1",
+		"updated_at" : "2026-01-02 23:20:37",
+		"category_code" : "DESTINATION",
+		"region_code" : "KHATLON"
+	},
+	{
+		"place_id" : 8,
+		"created_at" : "2026-01-02 23:26:04",
+		"is_active" : "1",
+		"updated_at" : "2026-01-02 23:26:04",
+		"category_code" : "DESTINATION",
+		"region_code" : "KHATLON"
+	},
+	{
+		"place_id" : 9,
+		"created_at" : "2026-01-02 23:29:56",
+		"is_active" : "1",
+		"updated_at" : "2026-01-02 23:29:56",
+		"category_code" : "DESTINATION",
+		"region_code" : "SUGHD"
+	},
+	{
+		"place_id" : 10,
+		"created_at" : "2026-01-02 23:32:35",
+		"is_active" : "1",
+		"updated_at" : "2026-01-02 23:32:35",
+		"category_code" : "DESTINATION",
+		"region_code" : "SUGHD"
+	},
+	{
+		"place_id" : 11,
+		"created_at" : "2026-01-02 23:36:24",
+		"is_active" : "1",
+		"updated_at" : "2026-01-02 23:36:24",
+		"category_code" : "DINING",
+		"region_code" : "DUSHANBE"
+	},
+	{
+		"place_id" : 12,
+		"created_at" : "2026-01-02 23:40:01",
+		"is_active" : "1",
+		"updated_at" : "2026-01-02 23:40:01",
+		"category_code" : "DINING",
+		"region_code" : "SUGHD"
+	},
+	{
+		"place_id" : 13,
+		"created_at" : "2026-01-02 23:45:35",
+		"is_active" : "1",
+		"updated_at" : "2026-01-02 23:45:35",
+		"category_code" : "PARK",
+		"region_code" : "DUSHANBE"
+	},
+	{
+		"place_id" : 14,
+		"created_at" : "2026-01-02 23:48:44",
+		"is_active" : "1",
+		"updated_at" : "2026-01-02 23:48:44",
+		"category_code" : "PARK",
+		"region_code" : "DUSHANBE"
+	},
+	{
+		"place_id" : 15,
+		"created_at" : "2026-01-02 23:51:41",
+		"is_active" : "1",
+		"updated_at" : "2026-01-02 23:51:41",
+		"category_code" : "STAY",
+		"region_code" : "DUSHANBE"
+	},
+	{
+		"place_id" : 16,
+		"created_at" : "2026-01-02 23:53:50",
+		"is_active" : "1",
+		"updated_at" : "2026-01-02 23:53:50",
+		"category_code" : "STAY",
+		"region_code" : "DUSHANBE"
+	}
+]

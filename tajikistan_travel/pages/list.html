@@ -1,0 +1,165 @@
+<!-- list.html -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome Tajikistan</title>
+
+    <!-- for google material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/list.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+
+    <script src="../js/include.js" defer></script>
+    <script src="../js/search.js" defer></script>
+</head>
+
+<body>
+    <!-- header -->
+    <div data-include="../components/header.html"></div>
+
+    <!-- List Page -->
+    <main class="list-page">
+        <div class="list-container">
+            <!-- Title -->
+            <header class="list-header">
+                <h1 class="list-title">Explore Tajikistan</h1>
+            </header>
+
+            <!-- Filters -->
+            <section class="filter-panel" aria-label="Search filters">
+                <form class="filter-form" id="filterForm" action="#" method="get">
+                    <!-- Search input -->
+                    <div class="filter-input">
+                        <span class="material-icons" aria-hidden="true">search</span>
+                        <input type="text" name="q" id="searchInput" placeholder="Where do you want to go?"
+                            aria-label="Search keyword" />
+                    </div>
+
+                    <!-- Category select -->
+                    <div class="filter-select-wrap" aria-label="Select category">
+                        <select class="filter-select" name="category" id="categorySelect">
+                            <option value="" selected>All Categories</option>
+                            <option value="DESTINATION">Destinations</option>
+                            <option value="STAY">Stays</option>
+                            <option value="DINING">Dining</option>
+                            <option value="PARK">Parks</option>
+                        </select>
+                        <span class="material-icons select-icon" aria-hidden="true">expand_more</span>
+                    </div>
+
+                    <!-- Region select -->
+                    <div class="filter-select-wrap" aria-label="Select region">
+                        <select class="filter-select" name="region" id="regionSelect">
+                            <option value="" selected>All Regions</option>
+                            <option value="DRS">Districts of Republican Subordination</option>
+                            <option value="DUSHANBE">Dushanbe</option>
+                            <option value="SUGHD">Sughd Region</option>
+                            <option value="KHATLON">Khatlon</option>
+                            <option value="GBAO">Gorno-Badakhshan Autonomous Province</option>
+                        </select>
+                        <span class="material-icons select-icon" aria-hidden="true">expand_more</span>
+                    </div>
+
+                    <!-- Search button -->
+                    <button type="submit" class="filter-submit">Search</button>
+                </form>
+            </section>
+
+            <!-- Results -->
+            <section class="results" aria-label="Search results">
+                <div class="results-meta">
+                    <h2 class="results-count">Loading...</h2>
+                </div>
+
+                <!-- Cards grid -->
+                <div class="card-grid">
+                    <!-- Dynamic content will be inserted here -->
+                </div>
+
+                <!-- Pagination (mock) -->
+                <nav class="pagination" aria-label="Pagination">
+                    <button type="button" class="page-btn" aria-label="Previous page">
+                        <span class="material-icons" aria-hidden="true">chevron_left</span>
+                    </button>
+
+                    <button type="button" class="page-num is-active" aria-current="page">1</button>
+                    <button type="button" class="page-num">2</button>
+                    <button type="button" class="page-num">3</button>
+
+                    <button type="button" class="page-btn" aria-label="Next page">
+                        <span class="material-icons" aria-hidden="true">chevron_right</span>
+                    </button>
+                </nav>
+            </section>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <div data-include="../components/footer.html"></div>
+
+    <script>
+        // List page search and filter functionality
+        document.addEventListener('DOMContentLoaded', async () => {
+            // Wait for search manager to initialize
+            await searchManager.initialize();
+
+            const filterForm = document.getElementById('filterForm');
+            const searchInput = document.getElementById('searchInput');
+            const categorySelect = document.getElementById('categorySelect');
+            const regionSelect = document.getElementById('regionSelect');
+
+            // Function to perform search/filter
+            function performSearch() {
+                const query = searchInput.value.trim();
+                const category = categorySelect.value;
+                const region = regionSelect.value;
+
+                const results = searchManager.search(query, category, region);
+                searchManager.renderResults(results);
+            }
+
+            // Check if there's a search query from home page
+            const savedQuery = sessionStorage.getItem('searchQuery');
+            if (savedQuery) {
+                searchInput.value = savedQuery;
+                sessionStorage.removeItem('searchQuery');
+                performSearch();
+            } else {
+                // Show all results initially
+                const allResults = searchManager.search('', '', '');
+                searchManager.renderResults(allResults);
+            }
+
+            // Handle form submission
+            if (filterForm) {
+                filterForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    performSearch();
+                });
+            }
+
+            // Handle real-time filtering as user types
+            if (searchInput) {
+                searchInput.addEventListener('input', performSearch);
+            }
+
+            // Handle category filter change
+            if (categorySelect) {
+                categorySelect.addEventListener('change', performSearch);
+            }
+
+            // Handle region filter change
+            if (regionSelect) {
+                regionSelect.addEventListener('change', performSearch);
+            }
+        });
+    </script>
+
+</body>
+
+</html>

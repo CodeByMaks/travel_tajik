@@ -1,0 +1,150 @@
+<!-- emergency_contacts.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Contacts</title>
+
+    <!-- for google material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/emergency_contacts.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <script src="../js/include.js" defer></script>
+</head>
+<body>
+    <!-- header -->
+    <div data-include="../components/header.html"></div>
+
+    <!-- Emergency Contacts Page -->
+    <main class="emergency-page">
+        <div class="emergency-container">
+            <!-- Title -->
+            <header class="emergency-header">
+                <h1 class="emergency-title">Emergency Contacts</h1>
+            </header>
+
+            <!-- Filters -->
+            <section class="filter-panel" aria-label="Search filters">
+                <form class="filter-form" action="#" method="get">
+                    <!-- Category select -->
+                    <div class="filter-select-wrap" aria-label="Select category">
+                        <select class="filter-select" name="category">
+                            <option value="" selected>Service Category</option>
+                            <option value="emergency">Emergency</option>
+                            <option value="medical">Medical</option>
+                            <option value="police">Police</option>
+                            <option value="fire">Fire</option>
+                        </select>
+                        <span class="material-icons select-icon" aria-hidden="true">expand_more</span>
+                    </div>
+
+                    <!-- Region select -->
+                    <div class="filter-select-wrap" aria-label="Select region">
+                        <select class="filter-select" name="region">
+                            <option value="" selected>All Regions</option>
+                            <option value="Dushanbe">Dushanbe</option>
+                            <option value="Sughd Region">Sughd Region</option>
+                            <option value="Khatlon">Khatlon</option>
+                            <option value="Gorno-Badakhshan Autonomous Province">Gorno-Badakhshan Autonomous Province</option>
+                            <option value="Districts of Republican Subordination">Districts of Republican Subordination</option>
+                        </select>
+                        <span class="material-icons select-icon" aria-hidden="true">expand_more</span>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Results -->
+            <section class="results" aria-label="Emergency contacts list">
+                <div class="results-meta">
+                    <h2 class="results-count">5 Results</h2>
+                </div>
+
+                <!-- Contact List -->
+                <div class="contact-list">
+                    <!-- Contact Card 1 -->
+                    <article class="contact-card">
+                        <div class="contact-info">
+                            <h3 class="contact-title">Universal Emergency</h3>
+                            <p class="contact-desc">Police, Ambulance, Fire</p>
+                        </div>
+                        <div class="contact-badge">
+                            <span class="badge badge-emergency">Emergency</span>
+                        </div>
+                        <a href="tel:112" class="contact-phone">
+                            <span class="material-icons" aria-hidden="true">call</span>
+                            112
+                        </a>
+                    </article>
+
+                    <!-- Contact Card 2 -->
+                    <article class="contact-card">
+                        <div class="contact-info">
+                            <h3 class="contact-title">Universal Emergency</h3>
+                            <p class="contact-desc">Police, Ambulance, Fire</p>
+                        </div>
+                        <div class="contact-badge">
+                            <span class="badge badge-emergency">Emergency</span>
+                        </div>
+                        <a href="tel:112" class="contact-phone">
+                            <span class="material-icons" aria-hidden="true">call</span>
+                            112
+                        </a>
+                    </article>
+
+                    <!-- Contact Card 3 -->
+                    <article class="contact-card">
+                        <div class="contact-info">
+                            <h3 class="contact-title">Universal Emergency</h3>
+                            <p class="contact-desc">Police, Ambulance, Fire</p>
+                        </div>
+                        <div class="contact-badge">
+                            <span class="badge badge-emergency">Emergency</span>
+                        </div>
+                        <a href="tel:112" class="contact-phone">
+                            <span class="material-icons" aria-hidden="true">call</span>
+                            112
+                        </a>
+                    </article>
+
+                    <!-- Contact Card 4 -->
+                    <article class="contact-card">
+                        <div class="contact-info">
+                            <h3 class="contact-title">Universal Emergency</h3>
+                            <p class="contact-desc">Police, Ambulance, Fire</p>
+                        </div>
+                        <div class="contact-badge">
+                            <span class="badge badge-emergency">Emergency</span>
+                        </div>
+                        <a href="tel:112" class="contact-phone">
+                            <span class="material-icons" aria-hidden="true">call</span>
+                            112
+                        </a>
+                    </article>
+
+                    <!-- Contact Card 5 -->
+                    <article class="contact-card">
+                        <div class="contact-info">
+                            <h3 class="contact-title">Universal Emergency</h3>
+                            <p class="contact-desc">Police, Ambulance, Fire</p>
+                        </div>
+                        <div class="contact-badge">
+                            <span class="badge badge-emergency">Emergency</span>
+                        </div>
+                        <a href="tel:112" class="contact-phone">
+                            <span class="material-icons" aria-hidden="true">call</span>
+                            112
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <div data-include="../components/footer.html"></div>
+</body>
+</html>

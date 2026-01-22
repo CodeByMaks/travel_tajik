@@ -1,0 +1,188 @@
+[
+	{
+		"image_id" : 1,
+		"created_at" : "2026-01-02 22:56:29",
+		"file_url" : "http://traveltajikistan.tj/wp-content/uploads/2023/03/image-19.png",
+		"place_id" : 1
+	},
+	{
+		"image_id" : 2,
+		"created_at" : "2026-01-02 23:00:54",
+		"file_url" : "http://traveltajikistan.tj/wp-content/uploads/2023/03/image-18.png",
+		"place_id" : 2
+	},
+	{
+		"image_id" : 3,
+		"created_at" : "2026-01-02 23:03:56",
+		"file_url" : "http://traveltajikistan.tj/wp-content/uploads/2023/03/image-10.png",
+		"place_id" : 3
+	},
+	{
+		"image_id" : 4,
+		"created_at" : "2026-01-02 23:06:45",
+		"file_url" : "http://traveltajikistan.tj/wp-content/uploads/2023/03/image-5.png",
+		"place_id" : 4
+	},
+	{
+		"image_id" : 5,
+		"created_at" : "2026-01-02 23:09:59",
+		"file_url" : "http://traveltajikistan.tj/wp-content/uploads/2023/05/grumm-2.jpg",
+		"place_id" : 5
+	},
+	{
+		"image_id" : 6,
+		"created_at" : "2026-01-02 23:10:13",
+		"file_url" : "http://traveltajikistan.tj/wp-content/uploads/2023/05/Grumm.jpg",
+		"place_id" : 5
+	},
+	{
+		"image_id" : 7,
+		"created_at" : "2026-01-02 23:18:34",
+		"file_url" : "http://traveltajikistan.tj/wp-content/uploads/2023/05/IMG_1341.jpg",
+		"place_id" : 6
+	},
+	{
+		"image_id" : 8,
+		"created_at" : "2026-01-02 23:18:34",
+		"file_url" : "http://traveltajikistan.tj/wp-content/uploads/2023/05/IMG_1368.jpg",
+		"place_id" : 6
+	},
+	{
+		"image_id" : 9,
+		"created_at" : "2026-01-02 23:18:34",
+		"file_url" : "http://traveltajikistan.tj/wp-content/uploads/2023/05/IMG_1397.jpg",
+		"place_id" : 6
+	},
+	{
+		"image_id" : 10,
+		"created_at" : "2026-01-02 23:24:06",
+		"file_url" : "http://traveltajikistan.tj/wp-content/uploads/2023/05/IMG_2974.jpg",
+		"place_id" : 7
+	},
+	{
+		"image_id" : 11,
+		"created_at" : "2026-01-02 23:24:06",
+		"file_url" : "http://traveltajikistan.tj/wp-content/uploads/2023/05/IMG_1049-1.jpg",
+		"place_id" : 7
+	},
+	{
+		"image_id" : 12,
+		"created_at" : "2026-01-02 23:24:06",
+		"file_url" : "http://traveltajikistan.tj/wp-content/uploads/2023/05/20141007_Tajikistan_1425_crop_Dushanbe_15638283503.jpg",
+		"place_id" : 7
+	},
+	{
+		"image_id" : 13,
+		"created_at" : "2026-01-02 23:28:24",
+		"file_url" : "http://traveltajikistan.tj/wp-content/uploads/2023/05/MG_3236.jpg",
+		"place_id" : 8
+	},
+	{
+		"image_id" : 14,
+		"created_at" : "2026-01-02 23:28:24",
+		"file_url" : "http://traveltajikistan.tj/wp-content/uploads/2023/05/IMG_1793.jpg",
+		"place_id" : 8
+	},
+	{
+		"image_id" : 15,
+		"created_at" : "2026-01-02 23:28:24",
+		"file_url" : "http://traveltajikistan.tj/wp-content/uploads/2023/05/IMG_1827.jpg",
+		"place_id" : 8
+	},
+	{
+		"image_id" : 16,
+		"created_at" : "2026-01-02 23:31:48",
+		"file_url" : "http://traveltajikistan.tj/wp-content/uploads/2023/03/image-40.png",
+		"place_id" : 9
+	},
+	{
+		"image_id" : 17,
+		"created_at" : "2026-01-02 23:34:15",
+		"file_url" : "http://traveltajikistan.tj/wp-content/uploads/2023/03/image-39.png",
+		"place_id" : 10
+	},
+	{
+		"image_id" : 18,
+		"created_at" : "2026-01-02 23:39:01",
+		"file_url" : "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/06/06/c8/al-sham.jpg?w=1800&h=1000&s=1",
+		"place_id" : 11
+	},
+	{
+		"image_id" : 19,
+		"created_at" : "2026-01-02 23:39:01",
+		"file_url" : "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1e/3b/45/47/mansaf-rice-and-chicken.jpg?w=1400&h=800&s=1",
+		"place_id" : 11
+	},
+	{
+		"image_id" : 20,
+		"created_at" : "2026-01-02 23:39:01",
+		"file_url" : "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1e/3b/44/cf/we-are-very-happy-to.jpg?w=1400&h=800&s=1",
+		"place_id" : 11
+	},
+	{
+		"image_id" : 21,
+		"created_at" : "2026-01-02 23:42:59",
+		"file_url" : "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/59/7c/07/caption.jpg?w=1400&h=-1&s=1",
+		"place_id" : 12
+	},
+	{
+		"image_id" : 22,
+		"created_at" : "2026-01-02 23:42:59",
+		"file_url" : "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/59/7b/b6/caption.jpg?w=1100&h=-1&s=1",
+		"place_id" : 12
+	},
+	{
+		"image_id" : 23,
+		"created_at" : "2026-01-02 23:42:59",
+		"file_url" : "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/bf/01/7a/photo3jpg.jpg?w=1400&h=-1&s=1",
+		"place_id" : 12
+	},
+	{
+		"image_id" : 24,
+		"created_at" : "2026-01-02 23:47:50",
+		"file_url" : "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/18/de/db/mirzo-tursonzoda.jpg?w=1100&h=-1&s=1",
+		"place_id" : 13
+	},
+	{
+		"image_id" : 25,
+		"created_at" : "2026-01-02 23:47:50",
+		"file_url" : "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/18/e3/36/tahir-mukhtorovich-sabirov.jpg?w=1400&h=-1&s=1",
+		"place_id" : 13
+	},
+	{
+		"image_id" : 26,
+		"created_at" : "2026-01-02 23:47:50",
+		"file_url" : "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/18/e0/56/mohammad-osimi.jpg?w=1100&h=-1&s=1",
+		"place_id" : 13
+	},
+	{
+		"image_id" : 27,
+		"created_at" : "2026-01-02 23:50:24",
+		"file_url" : "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/13/a9/ee/caption.jpg?w=2000&h=-1&s=1",
+		"place_id" : 14
+	},
+	{
+		"image_id" : 28,
+		"created_at" : "2026-01-02 23:50:24",
+		"file_url" : "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/6e/d7/8c/rudaki-monument.jpg?w=2000&h=-1&s=1",
+		"place_id" : 14
+	},
+	{
+		"image_id" : 29,
+		"created_at" : "2026-01-02 23:50:24",
+		"file_url" : "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/6e/d7/85/roses.jpg?w=2000&h=-1&s=1",
+		"place_id" : 14
+	},
+	{
+		"image_id" : 30,
+		"created_at" : "2026-01-02 23:53:16",
+		"file_url" : "https://traveltajikistan.tj/wp-content/uploads/2023/03/shumondf.jpg",
+		"place_id" : 15
+	},
+	{
+		"image_id" : 31,
+		"created_at" : "2026-01-02 23:55:20",
+		"file_url" : "https://traveltajikistan.tj/wp-content/uploads/2023/03/ezgif-5-bc899be1da.jpg",
+		"place_id" : 16
+	}
+]

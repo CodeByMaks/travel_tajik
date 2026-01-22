@@ -1,0 +1,114 @@
+[
+	{
+		"place_id": 1,
+		"name": "Varzob Gorge",
+		"description": "A stunning canyon with flowing waterfalls and crystal-clear rivers. Perfect for hiking and rock climbing with breathtaking mountain views.",
+		"category_code": "DESTINATION",
+		"region_code": "DRS"
+	},
+	{
+		"place_id": 2,
+		"name": "Anzob Pass",
+		"description": "A mountain pass offering panoramic views of the Pamir Mountains. An ideal destination for adventure seekers and nature photographers.",
+		"category_code": "DESTINATION",
+		"region_code": "DRS"
+	},
+	{
+		"place_id": 3,
+		"name": "Rudaki Park",
+		"description": "A beautiful urban park in Dushanbe featuring gardens, monuments, and cultural sites. Great for leisurely walks and cultural exploration.",
+		"category_code": "DESTINATION",
+		"region_code": "DUSHANBE"
+	},
+	{
+		"place_id": 4,
+		"name": "National Museum of Tajikistan",
+		"description": "A comprehensive museum showcasing the rich history, culture, and heritage of Tajikistan with artifacts spanning thousands of years.",
+		"category_code": "DESTINATION",
+		"region_code": "DUSHANBE"
+	},
+	{
+		"place_id": 5,
+		"name": "Panj River",
+		"description": "A majestic river that forms the border between Tajikistan and Afghanistan. Known for its pristine beauty and thrilling river trekking.",
+		"category_code": "DESTINATION",
+		"region_code": "GBAO"
+	},
+	{
+		"place_id": 6,
+		"name": "Murghab Plateau",
+		"description": "The highest and most remote plateau in Tajikistan surrounded by stunning mountain peaks. A true wilderness experience for adventurers.",
+		"category_code": "DESTINATION",
+		"region_code": "GBAO"
+	},
+	{
+		"place_id": 7,
+		"name": "Kulob Fortress",
+		"description": "An ancient fortress with historic ruins and panoramic views over Kulob valley. Rich in history dating back centuries.",
+		"category_code": "DESTINATION",
+		"region_code": "KHATLON"
+	},
+	{
+		"place_id": 8,
+		"name": "Khorog Bazaar",
+		"description": "A vibrant traditional bazaar in the heart of Khorog where locals trade crafts, spices, and fresh produce. Authentic Tajik experience.",
+		"category_code": "DESTINATION",
+		"region_code": "KHATLON"
+	},
+	{
+		"place_id": 9,
+		"name": "Iskanderkul Lake",
+		"description": "A stunning glacial lake in the Fann Mountains. Known for its turquoise color and serene atmosphere, perfect for hiking and photography.",
+		"category_code": "DESTINATION",
+		"region_code": "SUGHD"
+	},
+	{
+		"place_id": 10,
+		"name": "Penj Valley",
+		"description": "A picturesque valley with lush greenery and traditional villages. Great for cultural immersion and peaceful trekking.",
+		"category_code": "DESTINATION",
+		"region_code": "SUGHD"
+	},
+	{
+		"place_id": 11,
+		"name": "Al-Sham Restaurant",
+		"description": "A popular dining destination serving authentic Tajik and Middle Eastern cuisine. Known for warm hospitality and flavorful traditional dishes.",
+		"category_code": "DINING",
+		"region_code": "DUSHANBE"
+	},
+	{
+		"place_id": 12,
+		"name": "Somoni Café",
+		"description": "A charming café in Khujand offering traditional Tajik breakfast and light meals with a cozy atmosphere overlooking the city.",
+		"category_code": "DINING",
+		"region_code": "SUGHD"
+	},
+	{
+		"place_id": 13,
+		"name": "Dushanbe Central Park",
+		"description": "A spacious urban park featuring walking trails, green spaces, and seasonal flowers. Perfect for relaxation and outdoor activities.",
+		"category_code": "PARK",
+		"region_code": "DUSHANBE"
+	},
+	{
+		"place_id": 14,
+		"name": "Hisor Fortress Park",
+		"description": "A historic fortress surrounded by gardens and park areas just outside Dushanbe. Combines history with natural beauty.",
+		"category_code": "PARK",
+		"region_code": "DUSHANBE"
+	},
+	{
+		"place_id": 15,
+		"name": "Kohna Hotel Dushanbe",
+		"description": "A comfortable 3-star hotel in the heart of Dushanbe offering modern amenities and friendly service. Convenient location for city exploration.",
+		"category_code": "STAY",
+		"region_code": "DUSHANBE"
+	},
+	{
+		"place_id": 16,
+		"name": "Panj House Resort",
+		"description": "A boutique resort offering stunning views of the Panj Valley. Perfect for those seeking comfort and natural beauty combined.",
+		"category_code": "STAY",
+		"region_code": "DUSHANBE"
+	}
+]

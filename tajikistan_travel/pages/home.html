@@ -1,0 +1,188 @@
+<!-- home.html -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Tajikistan</title>
+
+    <!-- for google material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <script src="../js/include.js" defer></script>
+    <script src="../js/search.js" defer></script>
+</head>
+
+<body>
+    <!-- header -->
+    <div data-include="../components/header.html"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Discover the Roof of the World
+            </h1>
+
+            <p class="hero-subtitle">
+                Explore majestic peaks, ancient history, and warm <br>
+                hospitality in the heart of Central Asia.
+            </p>
+
+            <div class="hero-search">
+                <div class="search-box">
+                    <span class="material-icons">search</span>
+                    <input type="text" id="homeSearchInput" placeholder="Where do you want to go?" aria-label="Search destination" />
+                </div>
+                <button type="button" class="search-button" id="homeSearchBtn">
+                    Search
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regions Section -->
+    <section class="regions" id="regions">
+        <div class="regions-container">
+            <header class="regions-header">
+                <h2 class="regions-title">Discover Tajikistan’s Regions</h2>
+                <p class="regions-subtitle">
+                    Select a region to explore its unique landscapes, history, and culture.
+                </p>
+            </header>
+
+            <!-- Horizontal scroll area -->
+            <div class="regions-scroll" aria-label="Tajikistan regions">
+                <!-- Card 1 -->
+                <section class="region-card">
+                    <img class="region-image" src="../assets/images/home_reg_1.png" alt="Dushanbe region" />
+                    <div class="region-overlay">
+                        <span class="region-chip">Capital</span>
+                        <h3 class="region-name">Dushanbe</h3>
+                    </div>
+                </section>
+
+                <!-- Card 2 -->
+                <section class="region-card">
+                    <img class="region-image" src="../assets/images/home_reg_2.png" alt="Sughd Region" />
+                    <div class="region-overlay">
+                        <span class="region-chip">North</span>
+                        <h3 class="region-name">Sughd Region</h3>
+                    </div>
+                </section>
+
+                <!-- Card 3 -->
+                <section class="region-card">
+                    <img class="region-image" src="../assets/images/home_reg_3.png" alt="Khatlon region" />
+                    <div class="region-overlay">
+                        <span class="region-chip">South</span>
+                        <h3 class="region-name">Khatlon</h3>
+                    </div>
+                </section>
+
+                <!-- Card 4 -->
+                <section class="region-card">
+                    <img class="region-image" src="../assets/images/home_reg_4.png"
+                        alt="Gorno-Badakhshan Autonomous Region" />
+                    <div class="region-overlay">
+                        <span class="region-chip">East</span>
+                        <h3 class="region-name">Gorno-Badakhshan<br>Autonomous Province</h3>
+                    </div>
+                </section>
+
+                <!-- Card 5 -->
+                <section class="region-card">
+                    <img class="region-image" src="../assets/images/home_reg_5.png" alt="Rasht Valley region" />
+                    <div class="region-overlay">
+                        <span class="region-chip">Central</span>
+                        <h3 class="region-name">Districts of Republican<br>Subordination</h3>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="categories-container">
+            <header class="categories-header">
+                <h2 class="categories-title">Explore More Categories</h2>
+                <p class="categories-subtitle">
+                    Find exactly what you are looking for, from breathtaking nature to comfortable stays.
+                </p>
+            </header>
+
+            <div class="categories-grid" aria-label="Categories">
+                <!-- Category 1 -->
+                <a class="category-card" href="#" aria-label="Stays">
+                    <img class="category-image" src="../assets/images/home_cate_1.png" alt="Stays" />
+                    <div class="category-text">
+                        <h3 class="category-name">Stays</h3>
+                        <p class="category-desc">Hotels &amp; Resorts</p>
+                    </div>
+                </a>
+
+                <!-- Category 2 -->
+                <a class="category-card" href="#" aria-label="Dining">
+                    <img class="category-image" src="../assets/images/home_cate_2.png" alt="Dining" />
+                    <div class="category-text">
+                        <h3 class="category-name">Dining</h3>
+                        <p class="category-desc">Local food &amp; cafes</p>
+                    </div>
+                </a>
+
+                <!-- Category 3 -->
+                <a class="category-card" href="#" aria-label="Parks">
+                    <img class="category-image" src="../assets/images/home_cate_3.png" alt="Parks" />
+                    <div class="category-text">
+                        <h3 class="category-name">Parks</h3>
+                        <p class="category-desc">Nature escapes</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- footer -->
+    <div data-include="../components/footer.html"></div>
+
+    <script>
+        // Home page search functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.getElementById('homeSearchInput');
+            const searchBtn = document.getElementById('homeSearchBtn');
+
+            if (searchBtn) {
+                searchBtn.addEventListener('click', () => {
+                    const query = searchInput.value.trim();
+                    if (query) {
+                        // Store search query and redirect to list page
+                        sessionStorage.setItem('searchQuery', query);
+                        sessionStorage.removeItem('categoryFilter');
+                        sessionStorage.removeItem('regionFilter');
+                        window.location.href = './list.html';
+                    }
+                });
+
+                // Allow Enter key to trigger search
+                searchInput.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') {
+                        searchBtn.click();
+                    }
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>
