@@ -1,125 +1,157 @@
 <!-- detail.html -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Detail | Welcome Tajikistan</title>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Detail | Welcome Tajikistan</title>
+		<!-- for google material icon -->
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
 
-    <!-- for google material icon -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/loading.css" />
+		<link rel="stylesheet" href="../css/skeleton.css" />
+		<link rel="stylesheet" href="../css/header.css" />
+		<link rel="stylesheet" href="../css/detail.css" />
+		<link rel="stylesheet" href="../css/footer.css" />
 
-    <link rel="stylesheet" href="../css/loading.css" />
-    <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/detail.css" />
-    <link rel="stylesheet" href="../css/footer.css" />
+		<script src="../js/loading.js" defer></script>
+		<script src="../js/skeleton.js" defer></script>
+		<script src="../js/include.js" defer></script>
+		<script src="../js/search.js" defer></script>
+	</head>
 
-    <script src="../js/loading.js" defer></script>
-    <script src="../js/include.js" defer></script>
-    <script src="../js/search.js" defer></script>
-</head>
+	<body>
+		<!-- header -->
+		<div data-include="../components/header.html"></div>
 
-<body>
-    <!-- header -->
-    <div data-include="../components/header.html"></div>
+		<main class="detail-page">
+			<div class="detail-container">
+				<!-- meta chips -->
+				<div class="detail-meta">
+					<span class="chip chip-region" id="regionChip">Region</span>
+					<span class="chip chip-category" id="categoryChip">Category</span>
+				</div>
 
-    <main class="detail-page">
-        <div class="detail-container">
-            <!-- meta chips -->
-            <div class="detail-meta">
-                <span class="chip chip-region" id="regionChip">Region</span>
-                <span class="chip chip-category" id="categoryChip">Category</span>
-            </div>
+				<!-- title row -->
+				<div class="detail-title-row">
+					<a
+						class="back-btn"
+						href="javascript:history.back()"
+						aria-label="Go back"
+					>
+						<span class="material-icons back-icon" aria-hidden="true"
+							>arrow_back</span
+						>
+					</a>
+					<h1 class="detail-title" id="placeTitle">Place Title</h1>
+				</div>
+			</div>
 
-            <!-- title row -->
-            <div class="detail-title-row">
-                <a class="back-btn" href="javascript:history.back()" aria-label="Go back">
-                    <span class="material-icons back-icon" aria-hidden="true">arrow_back</span>
-                </a>
-                <h1 class="detail-title" id="placeTitle">Place Title</h1>
-            </div>
-        </div>
+			<!-- hero image -->
+			<section class="detail-hero" aria-label="Place image">
+				<img
+					class="detail-hero-img"
+					id="heroImage"
+					src="../assets/images/home_reg_2.png"
+					alt="Place image"
+				/>
+			</section>
 
-        <!-- hero image -->
-        <section class="detail-hero" aria-label="Place image">
-            <img class="detail-hero-img" id="heroImage" src="../assets/images/home_reg_2.png" alt="Place image" />
-        </section>
+			<!-- gallery section -->
+			<div class="detail-container">
+				<section
+					class="detail-gallery"
+					aria-label="Place gallery"
+					id="gallerySection"
+				>
+					<div class="gallery-grid" id="galleryGrid">
+						<!-- Image gallery will be inserted here -->
+					</div>
+				</section>
+			</div>
 
-        <!-- gallery section -->
-        <div class="detail-container">
-            <section class="detail-gallery" aria-label="Place gallery" id="gallerySection">
-                <div class="gallery-grid" id="galleryGrid">
-                    <!-- Image gallery will be inserted here -->
-                </div>
-            </section>
-        </div>
+			<div class="detail-container">
+				<!-- content -->
+				<section class="detail-content" aria-label="Place description">
+					<p class="detail-text" id="placeDescription">
+						No description available.
+					</p>
+				</section>
+			</div>
+		</main>
 
-        <div class="detail-container">
-            <!-- content -->
-            <section class="detail-content" aria-label="Place description">
-                <p class="detail-text" id="placeDescription">No description available.</p>
-            </section>
-        </div>
-    </main>
+		<!-- footer -->
+		<div data-include="../components/footer.html"></div>
 
-    <!-- footer -->
-    <div data-include="../components/footer.html"></div>
+		<script>
+			// Detail page functionality
+			document.addEventListener('DOMContentLoaded', async () => {
+				// Wait for search manager to initialize
+				await searchManager.initialize()
 
-    <script>
-        // Detail page functionality
-        document.addEventListener('DOMContentLoaded', async () => {
-            // Wait for search manager to initialize
-            await searchManager.initialize();
+				// Get place ID from URL parameter
+				const urlParams = new URLSearchParams(window.location.search)
+				const placeId = parseInt(urlParams.get('id'))
 
-            // Get place ID from URL parameter
-            const urlParams = new URLSearchParams(window.location.search);
-            const placeId = parseInt(urlParams.get('id'));
+				if (!placeId || isNaN(placeId)) {
+					document.querySelector('.detail-text').textContent =
+						'Invalid place ID.'
+					return
+				}
 
-            if (!placeId || isNaN(placeId)) {
-                document.querySelector('.detail-text').textContent = 'Invalid place ID.';
-                return;
-            }
+				// Find the place
+				const place = searchManager.places.find(p => p.place_id === placeId)
 
-            // Find the place
-            const place = searchManager.places.find(p => p.place_id === placeId);
+				if (!place) {
+					document.querySelector('.detail-text').textContent =
+						'Place not found.'
+					return
+				}
 
-            if (!place) {
-                document.querySelector('.detail-text').textContent = 'Place not found.';
-                return;
-            }
+				// Update page title
+				document.title = `${place.name} | Welcome Tajikistan`
 
-            // Update page title
-            document.title = `${place.name} | Welcome Tajikistan`;
+				// Set meta information
+				document.getElementById('placeTitle').textContent = place.name
+				document.getElementById('regionChip').textContent =
+					searchManager.getRegionName(place.region_code)
+				document.getElementById('categoryChip').textContent =
+					place.category_code.charAt(0) +
+					place.category_code.slice(1).toLowerCase()
 
-            // Set meta information
-            document.getElementById('placeTitle').textContent = place.name;
-            document.getElementById('regionChip').textContent = searchManager.getRegionName(place.region_code);
-            document.getElementById('categoryChip').textContent = place.category_code.charAt(0) + place.category_code.slice(1).toLowerCase();
+				// Set hero image
+				const heroImage = searchManager.getImageForPlace(place.place_id)
+				document.getElementById('heroImage').src = heroImage
+				document.getElementById('heroImage').alt = place.name
 
-            // Set hero image
-            const heroImage = searchManager.getImageForPlace(place.place_id);
-            document.getElementById('heroImage').src = heroImage;
-            document.getElementById('heroImage').alt = place.name;
+				// Set description
+				document.getElementById('placeDescription').textContent =
+					place.description
 
-            // Set description
-            document.getElementById('placeDescription').textContent = place.description;
+				// Load and display related images
+				const relatedImages = searchManager.images.filter(
+					img => img.place_id === place.place_id,
+				)
+				const galleryGrid = document.getElementById('galleryGrid')
 
-            // Load and display related images
-            const relatedImages = searchManager.images.filter(img => img.place_id === place.place_id);
-            const galleryGrid = document.getElementById('galleryGrid');
-
-            if (relatedImages.length > 1) {
-                // Remove hero image from gallery (already shown)
-                const galleryImages = relatedImages.slice(1);
-                galleryGrid.innerHTML = galleryImages.map(img => `
+				if (relatedImages.length > 1) {
+					// Remove hero image from gallery (already shown)
+					const galleryImages = relatedImages.slice(1)
+					galleryGrid.innerHTML = galleryImages
+						.map(
+							img => `
                     <img class="gallery-image" src="${img.file_url}" alt="${place.name}" />
-                `).join('');
-            } else {
-                document.getElementById('gallerySection').style.display = 'none';
-            }
-        });
-    </script>
-</body>
-
+                `,
+						)
+						.join('')
+				} else {
+					document.getElementById('gallerySection').style.display = 'none'
+				}
+			})
+		</script>
+	</body>
 </html>
