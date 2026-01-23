@@ -296,3 +296,24 @@
     font-weight: 300;
     color: #1B1B1B;
 }
+
+@media (max-width: 1024px) {
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 колонки для планшетов */
+    }
+}
+
+@media (max-width: 650px) {
+    .categories-grid {
+        grid-template-columns: 1fr; /* 1 колонка для телефонов */
+    }
+    
+    .hero-title {
+        font-size: 32px; /* Уменьшаем заголовок */
+    }
+    
+    .hero-search {
+        flex-direction: column; /* Поиск и кнопка в колонку */
+        padding: 10px;
+    }
+}

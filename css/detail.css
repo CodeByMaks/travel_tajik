@@ -104,11 +104,21 @@ body {
    Hero image
 ========================= */
 
-.detail-hero {
+/*.detail-hero {
     width: 100%;
     margin: 0;
     overflow: hidden;
     border-radius: 28px;
+}
+*/
+
+.detail-hero {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
 }
 
 .detail-hero-img {
