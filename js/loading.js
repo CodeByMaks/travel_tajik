@@ -3,7 +3,7 @@
 class LoadingManager {
     constructor() {
         this.loadingOverlay = null;
-        this.minimumLoadTime = 800; // Minimum time to show loader (ms)
+        this.minimumLoadTime = 1000; // Minimum time to show loader (ms)
         this.startTime = null;
     }
 
@@ -13,28 +13,24 @@ class LoadingManager {
     init() {
         if (this.loadingOverlay) return;
 
+        // Determine the correct path based on current page location
+        const isInPages = window.location.pathname.includes('/pages/');
+        const logoPath = isInPages ? '../assets/logo/tajikistan.png' : 'assets/logo/tajikistan.png';
+
         // Create overlay HTML
         const overlay = document.createElement('div');
         overlay.className = 'loading-overlay';
         overlay.id = 'loadingOverlay';
         overlay.innerHTML = `
             <div class="loader-container">
-                <div style="position: relative; width: 150px; height: 150px;">
-                    <div class="loader-circle"></div>
-                    <div class="mountain-loader">
-                        <div class="mountain-peak"></div>
-                        <div class="mountain-peak"></div>
-                        <div class="mountain-peak"></div>
-                        <div class="mountain-peak"></div>
-                        <div class="mountain-peak"></div>
-                    </div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
-                    <div class="particle"></div>
+                <div class="logo-loader-wrapper">
+                    <div class="rotating-circle circle-1"></div>
+                    <div class="rotating-circle circle-2"></div>
+                    <div class="rotating-circle circle-3"></div>
+                    <img src="${logoPath}" alt="Tajikistan" class="logo-image">
                 </div>
-                <h2 class="loading-text">Discovering Tajikistan<span class="loading-dots"></span></h2>
-                <p class="loading-subtitle">Exploring the Roof of the World...</p>
+                <h2 class="loading-text">Plan Your Adventure<span class="loading-dots"></span></h2>
+                <p class="loading-subtitle">Uncover Hidden Treasures & Create Unforgettable Memories...</p>
                 <div class="progress-bar-container">
                     <div class="progress-bar-fill"></div>
                 </div>
