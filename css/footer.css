@@ -23,10 +23,11 @@ body {
 }
 
 .footer-top {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 120px;
+    .footer-top {
+        flex-direction: column; /* Элементы футера в колонку */
+        gap: 40px; /* Уменьшаем гигантский разрыв 120px */
+        padding: 40px 20px;
+    }
 }
 
 .footer-logo img {
@@ -71,6 +72,7 @@ body {
 .language-container {
     display: flex;
     flex-wrap: wrap;
+    gap: 12px;
     align-items: flex-start;
     justify-content: flex-start;
 }
@@ -80,14 +82,15 @@ body {
     margin: 0 0 28px;
     font-size: 20px;
     font-weight: 700;
+    gap: 12px;
     color: #FFFFFF;
 }
 
 .language-container .lang-btn {
     background: none;
     border: none;
-    padding-right: 24px;
-    margin: 0;
+    padding-right: 0; /* Убираем фиксированный padding */
+    margin-right: 10px;
     cursor: pointer;
 }
 
@@ -113,25 +116,5 @@ body {
     text-align: center;
     font-size: 14px;
     color: #727272;
-}
 
-@media (max-width: 1024px) {
-    .footer {
-        padding: 64px 32px;
-    }
-
-    .footer-top {
-        gap: 64px;
-    }
-}
-
-@media (max-width: 768px) {
-    .footer-top {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .footer-logo img {
-        height: 72px;
-    }
 }

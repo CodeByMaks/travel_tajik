@@ -43,7 +43,7 @@ body {
 
 .list-title {
     margin: 0;
-    font-size: 44px;
+    font-size: 28px;
     font-weight: 700;
     letter-spacing: -0.02em;
 }
@@ -317,4 +317,24 @@ body {
     background: #008eff;
     color: #fff;
     border-color: rgba(0, 142, 255, 0.4);
+}
+
+@media (max-width: 1024px) {
+    .filter-form {
+        grid-template-columns: 1fr; /* Все поля фильтра друг под другом */
+        gap: 10px;
+    }
+
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+}
+
+@media (max-width: 520px) {
+    .card-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
